@@ -1,9 +1,9 @@
 # DataScience-Estudos
-Contém meus estudos iniciais de manipulação de dados. Além de visualização de dados (matplotlib, ...), numpy e outras ferramentas.
+Contém meus estudos iniciais em DataScience. Com visualização de dados, numpy e outras ferramentas.
 
 Principalmente, este projeto apresenta o fluxo completo de limpeza e tratamento de dados para Machine Learning, utilizando duas bases de dados distintas: uma base de concessão de crédito (credit_data) e uma base de censo demográfico (census).
 
-Foi utilizado primariamente o google colab para criação dos notebooks aqui salvos, em cada um deles consta um link direto.
+Foi utilizado o google colab para criação dos notebooks aqui salvos, em cada um deles consta um link direto.
 
 ## Tecnologias Utilizadas
 
@@ -26,6 +26,7 @@ Foi utilizado primariamente o google colab para criação dos notebooks aqui sal
 
 Focada na previsão de inadimplência.
 
+* Visualizações simples e dinâmicas (plotly)
 * Tratamentos realizados:
 
   * Identificação e correção de valores inconsistentes (ex: idades negativas substituídas pela média).
@@ -38,17 +39,18 @@ Focada na previsão de inadimplência.
 
 Focada em classificação socioeconômica.
 
-  * Tratamentos realizados:
+* Análise exploratória com histogramas e gráficos de contagem.
 
-    * Análise exploratória com histogramas e gráficos de contagem.
-
-    * Visualização Avançada: Uso de Treemaps e Parallel Categories via Plotly para entender a hierarquia entre profissão, escolaridade e renda.
-
+* Visualização Avançada: Uso de Treemaps e Parallel Categories via Plotly para entender a hierarquia entre profissão, escolaridade e renda.
+  
+* Tratamentos realizados:
     * Codificação de Variáveis Categóricas:
 
       1. LabelEncoder / OrdinalEncoder: Para transformar textos em números de forma otimizada.
 
       2. OneHotEncoder: Criação de variáveis dummy para atributos nominais, utilizando ColumnTransformer para manter o processamento eficiente em matrizes esparsas (evitando gargalos de memória RAM).
+     
+    * Escalonamento: Aplicação de StandardScaler evitando variáveis já tratadas com OneHotEncoder
 
 ## Como executar o projeto
 Certifique-se de ter as bibliotecas instaladas:
